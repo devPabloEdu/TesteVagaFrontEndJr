@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/TesteVagaFrontEndJr/static/css/main.66d3603f.css",
+    "main.js": "/TesteVagaFrontEndJr/static/js/main.45b63ba3.js",
+    "static/media/BannerImage.jpeg": "/TesteVagaFrontEndJr/static/media/BannerImage.9b20b822fdc9476b8365.jpeg",
+    "static/media/AsideBackground.jpeg": "/TesteVagaFrontEndJr/static/media/AsideBackground.4304a45440d41ee7f887.jpeg",
+    "static/media/escudo.png": "/TesteVagaFrontEndJr/static/media/escudo.369b66427593aa426ef5.png",
+    "static/media/slick.svg": "/TesteVagaFrontEndJr/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/TesteVagaFrontEndJr/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/TesteVagaFrontEndJr/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/TesteVagaFrontEndJr/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/TesteVagaFrontEndJr/index.html",
+    "main.66d3603f.css.map": "/TesteVagaFrontEndJr/static/css/main.66d3603f.css.map",
+    "main.45b63ba3.js.map": "/TesteVagaFrontEndJr/static/js/main.45b63ba3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66d3603f.css",
+    "static/js/main.45b63ba3.js"
+  ]
+}

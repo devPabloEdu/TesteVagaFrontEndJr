@@ -1,0 +1,585 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+*{
+  margin: 0;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.HeaderTopInfo {
+  display: flex;
+  justify-content: center; 
+  margin-top: 10px;
+  align-items: center;
+}
+
+.HeaderTopInfo p {
+  display: flex;
+  padding-left: 100px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  align-items: center;
+}
+.SpanRosa{
+  color: #F71963;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.LogoHeaderTopInfo{
+  width: 20px;
+  padding-right: 10px;
+}
+.HeaderBottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border:  solid rgba(82, 79, 79, 0.075);
+  border-radius: 10px;
+}
+.search-box {
+  position: relative; 
+  display: flex;
+  margin-left: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  padding-right: 50px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 657px;
+}
+
+.search-button {
+  position: absolute;
+  right: 10px; 
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px; 
+}
+.HeaderSearchLogos{
+  padding: 20px;
+  margin-left: 10px;
+}
+.HeaderNav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.HeaderNav a {
+ padding: 40px;
+ text-decoration: none;
+ color: #9F9F9F;
+ font-family: "Poppins", sans-serif;
+ font-size: 12px;
+ line-height: 18px;
+}
+.HeaderNav a:hover{
+color: #F71963;
+}
+.BannerImage {
+  position: relative;
+  background-image: url(../Images/Banner/BannerImage.jpeg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1; 
+  position: relative; 
+  padding: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #FFFF;
+}
+.BannerButton{
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #F71963;
+  color: white;
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  width: 227px;
+}
+
+.MainIntroductionNavBar {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+}
+
+.MainLogos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.MainLogos div {
+  display: flex;
+  flex-direction: column; /* Imagem em cima e texto embaixo */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  margin: 10px; /* Espaço entre os itens */
+  padding: 40px;
+  cursor: pointer;
+}
+
+.MainLogos img {
+  display: block; /* Remove o espaço embaixo da imagem causado por linhas de base */
+  margin-bottom: 5px; /* Espaço entre a imagem e o texto */
+  width: 70px;
+  background-color: rgba(56, 56, 56, 0.034);
+  border: solid rgba(56, 56, 56, 0) ;
+}
+
+.MainLogos p {
+  margin: 0; /* Remove a margem padrão do parágrafo */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px;
+}
+.ProdutosRelacionadosTitle{
+  color: #F71963;
+  border: 1px #DEDEDE;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+.ProdutosRelacionadosNav {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+.ProdutosRelacionadosNav a {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #3B3B3B;
+  text-decoration: none;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  border-top: 2px solid rgba(128, 128, 128, 0.233); /* Borda superior */
+  border-right: 2px solid rgba(128, 128, 128, 0.233); /* Borda direita */
+  border-bottom: 2px solid rgba(128, 128, 128, 0.233); /* Borda inferior */
+  border-left: 2px solid rgba(128, 128, 128, 0.233); /* Borda esquerda */
+  cursor: pointer;
+}
+.ProdutosRelacionadosNav a:hover{
+  color: #F71963;
+}
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+  .buttonNext {
+    background-color: light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+    color: light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+    border-color: light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+
+      &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+      }
+  }
+
+  button:nth-of-type(1) {
+      left: 0;
+  }
+
+  button:nth-of-type(2) {
+      right: 0;
+  }
+}
+
+.ProductsList {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+  padding: 40px;
+
+  .Product1, .Product2, .Product3, .Product4 {
+      flex: 1;
+      min-width: 25%;
+      box-sizing: border-box;
+      padding: 10px;
+      text-align: center;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      margin: 0 10px;
+
+      img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto 10px;
+      }
+
+      p {
+          margin: 10px 0;
+      }
+
+  }
+}
+
+.DescricaoProduto{
+  font-family: "Poppins", sans-serif;
+  color:#3F3F40;
+  font-size: 15px;
+  line-height: 22.5px;
+  font-weight: 300;
+}
+.PriceProduct{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3F3F40;
+}
+.DescontoProduct{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3F3F40;
+}
+.BuyButton{
+  background-color:#F71963;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  text-align: center;
+  width: 245px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #F71963;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #555;
+}
+.FreteGratis{
+  color: #F71963;
+  font-family: "Poppins", sans-serif;
+  line-height: 18px;
+  font-weight: 400;
+}
+.quantity-selector {
+  margin: 20px 0;
+}
+
+.quantity-selector label {
+  display: block;
+  margin-bottom: 10px;
+  
+}
+
+.quantity-selector input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 16px;
+}
+.parceirosDiv {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  gap: 100px; 
+}
+
+.ImagemParceiros {
+  background-image: url(../Images/AsideAssets/AsideBackground.jpeg);
+  background-size: cover;
+  padding: 100px;
+  border-radius: 10px;
+  width: 589.73px; 
+  height: 284px; 
+}
+
+.ParceirosH2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: white;
+  text-align: left;
+}
+
+.ParceirosP {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: white;
+}
+.buttonAside{
+  background-color:#F71963;
+  padding: 10px;
+  width: 134.59px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.AsideText h2{
+  color: #F71963;
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+}
+.AsideText p{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22.5px;
+  cursor: pointer;
+}
+.ParceirosOverlay{
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.MarcasTitle{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #F71963;
+  text-align: center;
+  padding: 20px;
+}
+.MarcasLogo {
+  width: 100%;
+  padding: 20px;
+}
+
+.MarcasLogo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+.FooterTop{
+  background-color:#2A2A2A;
+  display: flex;
+  margin-top: 20px;
+  padding: 30px;
+  justify-content: left;
+}
+.SobreNós{
+  padding-left: 50px;
+}
+.TextSobreNós h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.TextSobreNós a{
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 32px;
+  color: rgb(170, 168, 168);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.SobreNosImagens img{
+  padding: 10px;
+  padding-top: 90px;
+  cursor: pointer;
+}
+.InformacoesUteis{
+  padding-left: 70px;
+}
+.InformacoesUteis h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.InformacoesUteis a{
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 32px;
+  color: rgb(170, 168, 168);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.FormasDePagamento{
+  padding-left: 10px;
+}
+.FormasText{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.FormasImg {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+  gap: 8px; /* Espaço entre os itens */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  padding-top: 10px;
+}
+
+.FormasImg img {
+  width: 45px; /* Define a largura dos itens, menos o espaço entre eles */
+  height: 25px; /* Mantém a proporção da imagem */
+  object-fit: contain; /* Ajusta o conteúdo da imagem para caber dentro do item */
+  margin-left: 20px; /* Ajusta a margem à esquerda das imagens */
+  padding-top: 10px;
+}
+.FormasImg div{
+display: flex;
+flex-direction: column;
+padding-top: 20px;
+}
+.footerInput{
+  padding-left: 150px;
+}
+.footerInput div{
+  border: solid white 10px;
+  background-color: white;
+  padding: 5px;
+  justify-content: flex-end;
+}
+.textFooterInput{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color:#3F3F40;
+}
+.textFooterInput span{
+  font-weight: 700;
+}
+.inpuTextSPAN{
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+  color:#3F3F40;
+}
+.footerInputContainer input{
+  padding: 10px;
+}
+.footerInputContainer button{
+  padding: 12px;
+  background-color: #F71963;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+.FooterBotoom{
+  border-top: solid white 1px;
+  background-color: #2A2A2A;
+  display: flex;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 20px;
+}
+.FooterBotoom img{
+  padding-left: 550px;
+}
