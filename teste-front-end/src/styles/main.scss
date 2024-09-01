@@ -583,3 +583,112 @@ padding-top: 20px;
 .FooterBotoom img{
   padding-left: 550px;
 }
+
+/*Celulares*/
+@media (max-width: 768px) {
+  .HeaderTopInfo {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .HeaderTopInfo p {
+    padding-left: 0;
+  }
+
+  .search-box {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .search-input {
+    width: 50%;
+    padding-right: 40px;
+  }
+
+  .HeaderSearchLogos {
+    display: none;
+  }
+
+  .HeaderNav {
+    flex-direction: column;
+    padding: 10px;
+    display: none;
+  }
+
+  .HeaderNav a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .BannerButton {
+    width: 50%;
+  }
+  .overlay{
+    font-size: 1em;
+    padding: 2px;
+  }
+  .MainLogos div {
+    padding: 20px;
+  }
+  .ProdutosRelacionadosTitle{
+    font-size: 1em;
+  }
+  .ProdutosRelacionadosNav{
+    display: none;
+  }
+
+  .ProdutosRelacionadosNav a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .carousel-container {
+    flex-direction: column;
+  }
+
+  .ProductsList {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .parceirosDiv{
+    display: flex;
+    flex-direction: column;
+  }
+  .ImagemParceiros{
+    display: none;
+  }
+  .MarcasLogo{
+    padding: 0px;
+  }
+  .FormasImg img {
+    width: 35px;
+    height: 20px;
+  }
+  .FooterTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerInput {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footerInputContainer input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .FooterBotoom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .FooterBotoom img {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+}
+
